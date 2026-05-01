@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Personal Expense Tracker</h1>
+
+    <h2>Balance: <span id="balance">₹0</span></h2>
+
+    <!-- Add Transaction -->
+    <form id="form">
+        <input type="text" id="text" placeholder="Description" required>
+
+        <input type="number" id="amount"
+            placeholder="Amount (+Income / -Expense)" required>
+
+        <select id="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Bills</option>
+            <option>Salary</option>
+        </select>
+
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <h3>Transaction History</h3>
+    <ul id="transaction-list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
